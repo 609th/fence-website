@@ -388,3 +388,50 @@ main p {
     font-size: 1.125rem;
   }
 }
+
+/* === SERVICES PAGE STYLES === */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.service-card {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.service-card h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 1.0625rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Responsive grid for tablets and up */
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
