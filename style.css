@@ -291,3 +291,26 @@ nav {
     border: none;
   }
 }
+
+/* Maintain good contrast */
+body {
+  background-color: #fff;
+  color: #222;
+}
+
+/* Visibly focusable elements */
+a, button {
+  outline: none;
+}
+
+a:focus, button:focus {
+  outline: 2px solid #007BFF;
+}
+
+/* Respect user's system settings */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
